@@ -7,7 +7,7 @@ class EncryptWindow(QWidget):
         self.setWindowTitle('Encrypt')
         self.resize(1000, 750)
         mainLayout = QVBoxLayout()
-        self.btnOpenFile = QPushButton('Dosya Aç')
+        self.btnOpenFile = QPushButton('Choose File')
         self.btnOpenFile.clicked.connect(self.openFileDialog)
         mainLayout.addWidget(self.btnOpenFile)
         self.setLayout(mainLayout)
